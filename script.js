@@ -30,7 +30,7 @@ function generateProfile(data) {
 }
 
 const fetchData = async () => {
-  const username = searchInput.value.trim();
+  const username = searchInput.value.toLowerCase().trim();
   loading.innerHTML = 'Loading...';
   if (!username) {
     alert('Please enter a username')
