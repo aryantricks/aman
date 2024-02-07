@@ -1,0 +1,153 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Caliri,sans-serif;
+}
+body{
+  background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.search{
+  min-width: 40%;
+  display: flex;
+  gap: 1rem;
+}
+.search input{
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 15px;
+}
+.search input:focus{
+outline: 1.5px solid purple;
+}
+button{
+  padding: 10px 20px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-color: #4158D0;
+  color: white;
+  font-size: 16px;
+  transition: .1s ease-in;
+}
+button:hover{
+  /* opacity: .6; */
+  background-color: #C850C0;
+  transition: .1s ease-in;
+}
+button:active{
+  background-color: #FFCC70;
+  transition: .1s ease-in;
+}
+
+.profile-card{
+  background-color: #fff;
+  display: none;
+  width: 40%;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.top-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.avatar{
+  width: 150px;
+  height: 150px;
+}
+.avatar img{
+  width: 150px;
+  height: 150px;
+}
+.self{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about-section{
+margin: 20px 0;
+}
+.status{
+  display: flex;
+  justify-content: space-between;
+}
+.status-item p{
+  text-align: center;
+  margin: 10px;
+}
+.accountCreation{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.invalid{
+  display: none;
+  font-size: 25px;
+}
+
+
+/* ********** responsive section ********* */
+@media(max-width:900px){
+  .top-section{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+  }
+  .left{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+  }
+  .avatar{
+    margin: -10px 0 5px 0;
+  }
+  h1{
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .search{
+    margin: -40px 0 0 0;
+  }
+}
+@media (max-width:463px) {
+  .profile-card{
+    width: 90%;
+    margin: -40px;
+  }
+  .left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .accountCreation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Github profile </title>
+</head>
+<link rel="stylesheet" href="./style.css">
+
+<body>
+  <div class="container">
+    <h1>Search Github Profile</h1>
+    <div class="search">
+      <input type="text" id="searchInput" name="searchInput" , placeholder="Enter your Github username">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="profile-card">
+      <div class="top-section">
+        <div class="left">
+          <div class="avatar">
+            <img id="avatarImg" src="https://avatars.githubusercontent.com/u/121761736?v=4" alt="avatar">
+          </div>
+          <div class="self">
+            <h2 id="name">Aman Prasad</h2>
+            <h3 id="username">@amanprasad2707</h3>
+          </div>
+        </div>
+        <div class="right">
+          <a id="goToProfile" href="#" target="_blank"><button>Go to profile</button></a>
+        </div>
+      </div>
+      <div class="about-section">
+        <h2>About</h2>
+        <p id="bio">2nd year Electronics and Communication Engineering student</p>
+      </div>
+      <div class="status">
+        <div class="status-item">
+          <h3>Followers</h3>
+          <p id="followers">12</p>
+        </div>
+        <div class=" status-item">
+          <h3>Following</h3>
+          <p id="following">2</p>
+        </div>
+        <div class="status-item">
+          <h3>Repos</h3>
+          <p id="repo">36</p>
+        </div>
+      </div>
+      <div class="accountCreation">
+        <div class="creationItem">
+          <h3>Account created</h3>
+          <p id="accountCreated">342</p>
+        </div>
+        <div class="creationItem">
+          <h3>Account updated</h3>
+          <p id="accountUpdated">23</p>
+        </div>
+      </div>
+    </div>
+    <div class="invalid">
+      <h3>User not found</h3>
+    </div>
+    <h3 id="loading"></h3>
+  </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
