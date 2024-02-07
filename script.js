@@ -1,4 +1,4 @@
-const requestURL = 'http://api.github.com/users/'
+const requestURL = 'https://api.github.com/users/'
 const searchInput = document.getElementById('searchInput')
 const searchBtn = document.getElementById('searchBtn')
 const profileCard = document.querySelector('.profile-card')
